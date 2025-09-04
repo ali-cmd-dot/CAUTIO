@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scrapbook-source="https://beta.cautio.in/en/auth/login?m_logout=false&amp;redirect=fleet?m_logout=false" data-scrapbook-create="20250904045553117">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="539405a3fe1adf51.css">
-    <link rel="stylesheet" href="1437dd1eff1d9e54.css">
+    <link rel="stylesheet" href="539405a3fe1adf51.css" data-precedence="next">
+    <link rel="stylesheet" href="1437dd1eff1d9e54.css" data-precedence="next">
     <title>Cautio</title>
     <link rel="icon" href="favicon.ico">
 </head>
@@ -15,7 +15,7 @@
                 <div class="px-5">
                     <div class="text-center md:pb-5">
                         <a href="/">
-                            <img src="/main-logo.png" alt="Cautio" class="h-10 mx-auto">
+                            <img src="main-logo.png" alt="Cautio" class="h-10 mx-auto">
                         </a>
                         <h1 class="font-heading-7 font-bold text-gray-950 mt-12 mb-1">
                             Log in to your account
@@ -24,7 +24,7 @@
                             Welcome back!
                         </p>
                     </div>
-                    <form>
+                    <form id="login-form">
                         <div class="mt-8">
                             <label class="block font-body-m-regular text-gray-950 mb-2" for="email">
                                 Username
@@ -60,5 +60,14 @@
             </div>
         </div>
     </main>
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <img src="main-logo-1.png" alt="Cautio Loading Logo" class="loading-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
