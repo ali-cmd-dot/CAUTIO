@@ -1,11 +1,20 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('login-form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-    const loadingOverlay = document.getElementById('loading-overlay');
-    loadingOverlay.classList.remove('hidden');
+            // Yahan loading animation dikhayenge, agar aapne HTML me loading element banaya hai.
+            // Example: document.getElementById('loading-overlay').classList.remove('hidden');
 
-    setTimeout(() => {
-        loadingOverlay.classList.add('hidden');
-        alert('Login successful!');
-    }, 3000);
+            // Simulate login process
+            setTimeout(() => {
+                // Yahan loading animation hide karenge.
+                // Example: document.getElementById('loading-overlay').classList.add('hidden');
+                
+                alert('Login successful!');
+                // window.location.href = 'dashboard.html'; // Redirect to a new page
+            }, 3000);
+        });
+    }
 });
