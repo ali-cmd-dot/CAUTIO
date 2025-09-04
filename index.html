@@ -2,37 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="539405a3fe1adf51.css">
+    <link rel="stylesheet" href="1437dd1eff1d9e54.css">
+    <title>Cautio</title>
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <div class="login-container">
-        <div class="logo">
-            <img src="your-logo.png" alt="Your Company Logo">
-        </div>
-        <form id="login-form">
-            <h2>Log in to your account</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+    <main class="w-full flex-1">
+        <div class="container mx-auto">
+            <div class="py-14 w-full md:w-1/2 mx-auto">
+                <div class="px-5">
+                    <div class="text-center md:pb-5">
+                        <a href="/">
+                            <img src="/main-logo.png" alt="Cautio" class="h-10 mx-auto">
+                        </a>
+                        <h1 class="font-heading-7 font-bold text-gray-950 mt-12 mb-1">
+                            Log in to your account
+                        </h1>
+                        <p class="font-body-m-regular text-gray-700">
+                            Welcome back!
+                        </p>
+                    </div>
+                    <form>
+                        <div class="mt-8">
+                            <label class="block font-body-m-regular text-gray-950 mb-2" for="email">
+                                Username
+                            </label>
+                            <input class="w-full h-11 px-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500" id="email" type="text" placeholder="Enter your username">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block font-body-m-regular text-gray-950 mb-2" for="password">
+                                Password
+                            </label>
+                            <input class="w-full h-11 px-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500" id="password" type="password" placeholder="Enter your password">
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                                    Remember me
+                                </label>
+                            </div>
+                            <div class="text-sm">
+                                <a href="#" class="font-medium text-primary-600 hover:text-primary-500">
+                                    Forgot password?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                Sign in
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <a href="#" class="forgot-password">Forgot Password?</a>
-            <button type="submit" class="login-button">Sign in</button>
-        </form>
-    </div>
-
-    <div id="loading-overlay" class="loading-overlay hidden">
-        <div class="loading-content">
-            <img src="your-logo.png" alt="Loading Logo" class="loading-logo">
-            <div class="spinner"></div>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>
